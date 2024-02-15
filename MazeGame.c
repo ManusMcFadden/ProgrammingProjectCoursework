@@ -62,6 +62,10 @@ int validMove (position, input) {
     //return 1 otherwise
 }
 
+updatePlayerCharacter (position, mazeCharacters) {
+//change position in mazeCharacters to player symbol
+}
+
 //main
 int main(int argc, char *argv[]) {
 //open file
@@ -83,11 +87,15 @@ int main(int argc, char *argv[]) {
 //initialize player
     //set position to value of getStart
 
+//call updatePlayerCharacter
+
 //loop until player is on e
+    //display maze
     //loop until a valid move has been done
     //wait for input
     //call validMove
     //if move is valid then change position accordingly
+    //call updatePlayerCharacter
     //make valid move boolean true
     //else do nothing
     
