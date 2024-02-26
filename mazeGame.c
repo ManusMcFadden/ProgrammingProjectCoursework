@@ -68,6 +68,9 @@ updatePlayerCharacter (position, mazeCharacters) {
 
 //main
 int main(int argc, char *argv[]) {
+//if not for 2 arguments
+//then return error message
+
 //open file
     //check file opened correctly
     //if not then error message
@@ -92,11 +95,11 @@ int main(int argc, char *argv[]) {
 //loop until player is on e
     //display maze
     //loop until a valid move has been done
-    //wait for input
-    //call validMove
-    //if move is valid then change position accordingly
-    //call updatePlayerCharacter
-    //make valid move boolean true
-    //else do nothing
+        //wait for input
+        //call validMove
+        //if move is valid then change position accordingly
+            //call updatePlayerCharacter
+            //make valid move boolean true
+        //else do nothing
     
 }
