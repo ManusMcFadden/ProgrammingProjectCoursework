@@ -51,9 +51,22 @@ int validStartAndEndNumber (rows, columns, mazeCharacters) {
     //else return 0
 }
 
+int validRoute (rows, columns, mazeCharacters) {
+    //initialize new identical maze
+    //perform depth first search
+    //if there is a route then return 1
+    //else return 0
+
+}
+
 int *getStart (mazeCharacters) {
     //iterate through mazeCharacters until a character = s
     //return the position of the s
+}
+
+int validInput (input) {
+    //if input is WASD then return 1
+    //else return 0
 }
 
 int validMove (position, input) {
@@ -86,6 +99,7 @@ int main(int argc, char *argv[]) {
 //call validSymbols
 //call validEdges
 //call validStartAndEndNumber
+//call validRoute
 
 //initialize player
     //set position to value of getStart
@@ -96,10 +110,12 @@ int main(int argc, char *argv[]) {
     //display maze
     //loop until a valid move has been done
         //wait for input
+        //call validInput
         //call validMove
         //if move is valid then change position accordingly
             //call updatePlayerCharacter
             //make valid move boolean true
         //else do nothing
     
+//print winning message
 }
