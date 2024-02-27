@@ -12,19 +12,18 @@ int position[2];
 int atEnd
 } __PLAYER;
 //functions and procedures
-int validShape (mazeFile) {
+validShape (mazeFile) {
     //iterate through each row to check they are all the same length
     //iterate through each column to check they are the same length
-    //if so then return 1
-    //else return 0
+    //if not then display error message
 }
 
 int getRows (mazeFile) {
-
+    //return rows
 }
 
 int getColumns (mazeFile) {
-    
+    //return columns
 }
 
 int validSize (rows, columns) {
@@ -34,14 +33,7 @@ int validSize (rows, columns) {
 
 int validSymbols (rows, columns, mazeCharacters) {
     //iterate through mazeCharacters a number of times decided by the values of rows and columns
-    //for each character, check if it is a #, ' ', s or e
-}
-
-int validEdges (rows, columns, mazeCharacters) {
-    //iterate through mazeCharacters a number of times decided by the values of rows and columns
-    //check that none of the edges = ' '
-    //if this is true return 1
-    //else return 0
+    //for each character, check if it is a #, ' ', S or E
 }
 
 int validStartAndEndNumber (rows, columns, mazeCharacters) {
@@ -61,7 +53,7 @@ int validRoute (rows, columns, mazeCharacters) {
 
 int *getStart (mazeCharacters) {
     //iterate through mazeCharacters until a character = s
-    //return the position of the s
+    //return the position of the S
 }
 
 int validInput (input) {
@@ -70,8 +62,8 @@ int validInput (input) {
 }
 
 int validMove (position, input) {
-    //based on the button pressed check if the character in the direction required is a # 
-    //return 0 if it is #
+    //based on the button pressed check if the character in the direction required is a # or if it exceeds the limits of the map 
+    //return 0 if it does either of these
     //return 1 otherwise
 }
 
@@ -81,12 +73,17 @@ updatePlayerCharacter (position, mazeCharacters) {
 
 //main
 int main(int argc, char *argv[]) {
-//if not for 2 arguments
+//if not 2 arguments
 //then return error message
 
 //open file
     //check file opened correctly
     //if not then error message
+    //else print file opened successfully message
+
+//check if file is empty
+//if it is return an error message
+
 
 //initialize maze 
 //call validShape
@@ -97,7 +94,6 @@ int main(int argc, char *argv[]) {
     
 //call validSize
 //call validSymbols
-//call validEdges
 //call validStartAndEndNumber
 //call validRoute
 
