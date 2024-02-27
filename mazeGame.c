@@ -5,11 +5,12 @@ typedef struct {
 int rows;
 int columns;
 char mazeCharacters[100][100];
+int start[2];
+int end[2];
 } __MAZE;
 
 typedef struct {
 int position[2];
-int atEnd
 } __PLAYER;
 //functions and procedures
 validShape (mazeFile) {
@@ -26,24 +27,24 @@ int getColumns (mazeFile) {
     //return columns
 }
 
-int validSize (rows, columns) {
-    //if rows and columns are both between 5 and 100 return 1 
-    //else return 0
+validSize (rows, columns) {
+    //check if rows and columns are both between 5 and 100
+    //else return error message
 }
 
-int validSymbols (rows, columns, mazeCharacters) {
+validSymbols (rows, columns, mazeCharacters) {
     //iterate through mazeCharacters a number of times decided by the values of rows and columns
     //for each character, check if it is a #, ' ', S or E
+    //else return an error message
 }
 
-int validStartAndEndNumber (rows, columns, mazeCharacters) {
+validStartAndEndNumber (rows, columns, mazeCharacters) {
     //iterate through mazeCharacters a number of times decided by the values of rows and columns
     //keep count of the number of s and e characters
-    //if there is one of each return 1
-    //else return 0
+    //else return an error message
 }
 
-int validRoute (rows, columns, mazeCharacters) {
+validRoute (rows, columns, mazeCharacters) {
     //initialize new identical maze
     //perform depth first search
     //if there is a route then return 1
@@ -58,17 +59,18 @@ int *getStart (mazeCharacters) {
 
 int validInput (input) {
     //if input is WASD then return 1
-    //else return 0
+    //else display message and return 0
 }
 
 int validMove (position, input) {
     //based on the button pressed check if the character in the direction required is a # or if it exceeds the limits of the map 
     //return 0 if it does either of these
-    //return 1 otherwise
+    //else display message and return 1
 }
 
 updatePlayerCharacter (position, mazeCharacters) {
 //change position in mazeCharacters to player symbol
+//change start in mazeCharacters to player S
 }
 
 //main
@@ -87,7 +89,6 @@ int main(int argc, char *argv[]) {
 
 //initialize maze 
 //call validShape
-    //if it returns 0 then show an error
 //set maze.columns to the result of getColumns
 //set maze.rows to the result of getColumns
 //turn file into maze.mazeCharacters[][]
@@ -111,7 +112,6 @@ int main(int argc, char *argv[]) {
         //if move is valid then change position accordingly
             //call updatePlayerCharacter
             //make valid move boolean true
-        //else do nothing
     
 //print winning message
 }
