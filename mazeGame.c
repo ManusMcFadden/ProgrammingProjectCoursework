@@ -86,12 +86,12 @@ int main(int argc, char *argv[]) {
 //check if file is empty
 //if it is return an error message
 
-
 //initialize maze 
 //call validShape
 //set maze.columns to the result of getColumns
 //set maze.rows to the result of getColumns
-//turn file into maze.mazeCharacters[][]
+//loop through file
+    //turn file into maze.mazeCharacters[][]
     
 //call validSize
 //call validSymbols
