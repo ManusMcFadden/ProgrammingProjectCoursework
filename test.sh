@@ -24,18 +24,18 @@ fi
 
 echo -e "\n~~ File Handling~~"
 
-echo -n "Testing bad filename - "
+echo -n "Testing incorrect filename - "
 ./mazeGame doesntExist.txt > tmp
-if grep -q "Error: Bad filename" tmp;
+if grep -q "Error: Incorrect filename" tmp;
 then
     echo "PASS"
 else
     echo "FAIL"
 fi
 
-echo -n "Testing bad permissions - "
+echo -n "Testing no permissions - "
 ./mazeGame data/removedPerm.txt > tmp
-if grep -q "Error: Bad filename" tmp;
+if grep -q "Error: Incorrect filename" tmp;
 then
     echo "PASS"
 else
@@ -147,7 +147,7 @@ else
     echo "FAIL"
 fi
 
-echo -n "Testing bad user input (empty) - "
+echo -n "Testing invalid user input (empty) - "
 echo "" | timeout 0.2s ./mazeGame data/normal.txt > tmp
 if grep -q "Error: Invalid input" tmp;
 then
